@@ -1,0 +1,15 @@
+#include "Pokemon.h"
+#include <stdio.h>
+
+Pokemon::Pokemon(const char *name) {
+	this->name = name;
+}
+
+Pokemon::~Pokemon() {
+
+}
+
+Pokemon::Pokemon(const Pokemon& obj) {
+	printf("%sÇÉRÉsÅ[\n", obj.name);
+	name = obj.name;
+}
